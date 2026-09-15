@@ -104,6 +104,7 @@ small::before{
 
 table{
     width: 100%;
+    min-height: 200px;
     margin-top: 10px;
     table-layout: fixed;
 }
