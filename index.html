@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="i love my site"/>
+    <title>Project CRUDS</title>
+    
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div id="CRUDS">
+<div id="head">
+    <h1 id="title">CRUDS</h1>
+    <p id="paragraphe">Create Read Update Delete Search</p>
+</div>
+
+<div id="input">
+    <input type="text" id="name" placeholder="name">
+    <div id="valeurs">
+    <input onkeyup=" calcul()" type="number" id="price" placeholder="price">
+    <input onkeyup="calcul()" type="number" id="taxes" placeholder="taxes">
+    <input onkeyup="calcul()" type="number" id="ads" placeholder="ads">
+    <input onkeyup="calcul()" type="number" id="discount" placeholder="discount">
+    <small id="total"></small>
+    </div>
+   
+    <input type="number" id="count" placeholder="count">
+    <input type="text" id="category" placeholder="category">
+    <button id="create">Create</button>
+</div>
+
+<div id="output">
+<input onkeyup=" showsearch(this.value)" type="search" id="search" placeholder="Search">
+<div id="searchBtns">
+    <button onclick="search(this.id)" class="SB" id="SBN">Search By Name</button>
+    <button  onclick="search(this.id)"class="SB" id="SBC">Search By Category</button>
+</div>
+<div id="btnDALL">
+    <button>Delete All</button>
+</div>
+<table id="table">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>total</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+
+    <tr>
+        
+    </tr>
+
+    <tbody id="tbody">
+     
+    </tbody>
+
+    
+</table>
+</div>
+</div>
+
+<footer class="footer">
+    <p class="footer-name">Mohammed Laabidi</p>
+    <p class="footer-desc">Create, Read, Update, Delete and Search your products easily.</p>
+    <div class="contact-btns">
+        <a href="tel:+212669003765" class="linkedin-btn">My number</a>
+        <a href="mailto:elamed2007@gmail.com" class="linkedin-btn">My Email</a>
+        <a href="https://www.linkedin.com/in/mohammed-laabidi-793a40436" class="linkedin-btn">My Linkedin</a>
+    </div>
+    <p>&copy; 2026 CRUDS. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>

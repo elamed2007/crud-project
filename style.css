@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body{
+        background-color: #123;
+        font-size: 18px;
+    }
+
+input{
+    width: 100%;
+    padding: 7px;
+    margin: 0.5% 0;
+    font-size: 17px;
+    background-color: #112;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+input:focus{
+    transform: scale(1.1);
+    background-color: #000;
+}
+
+@media (hover: none), (max-width: 768px){
+    input:focus{
+        transform: none;
+    }
+}
+
+button{
+    width: 100%;
+    background: #0069D9;
+    border: none;
+    padding: 9px;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover{
+    cursor: pointer;
+    font-size: 19px;
+}
+
+#CRUDS{
+
+height: 100vh;
+margin: 3% 0px  3% 10%;
+padding-right: 11%;
+}    
+
+#head{
+     text-align: center;
+}
+
+#title{
+    font-size: 48px ;
+}
+
+#paragraphe{
+    font-size: 24px;
+}
+
+#valeurs{
+   
+    display: flex;
+}
+
+#valeurs input{
+   width: 22%;
+   margin-right: auto;
+}
+
+small{
+    background-color: #ff0000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+small::before{
+    content: 'Total:';
+   
+}
+#searchBtns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.SB{
+    width: 40%;
+}
+
+table{
+    width: 100%;
+    margin-top: 10px;
+    table-layout: fixed;
+}
+
+th{
+    padding-top: 8px;
+}
+
+/* responsive design */
+
+@media (max-width: 1024px){
+    #CRUDS{
+        height: auto;
+        margin: 3% 6%;
+        padding-right: 0;
+    }
+
+    #title{
+        font-size: 36px;
+    }
+
+    #valeurs input{
+        width: 24%;
+    }
+
+    input{
+        margin: 8px 2%;
+    }
+
+    button{
+        margin: 8px 2%;
+    }
+
+    #SBC{
+        margin-left: 0;
+    }
+
+    small{
+        margin: auto;
+    }
+
+    .SB{
+        width: 48%;
+    }
+
+    table{
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+
+    th{
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 767px){
+    #CRUDS{
+        height: auto;
+        margin: 3% 4%;
+        padding-right: 0;
+    }
+
+    #title{
+        font-size: 32px;
+    }
+
+    #paragraphe{
+        font-size: 16px;
+    }
+
+    #valeurs{
+        flex-wrap: wrap;
+    }
+
+    #valeurs input{
+        width: 48%;
+        margin-right: 0;
+    }
+
+    small{
+        width: 48%;
+        margin: auto;
+    }
+
+    #SBC{
+        margin-left: 0;
+    }
+
+    #searchBtns{
+        flex-direction: column;
+    }
+
+    .SB{
+        width: 100%;
+    }
+
+    table{
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th{
+        padding: 8px 10px;
+    }
+}
+
+#btnDALL{
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 480px){
+    #CRUDS{
+        margin: 3% 2%;
+    }
+
+    #title{
+        font-size: 26px;
+    }
+
+    #valeurs input{
+        width: 100%;
+    }
+
+    small{
+        width: 80%;
+        margin: 0 auto;
+        padding: 3px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 12px;
+        margin: 8px 0;
+    }
+
+    #btnDALL button{
+        width: 100%;
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.footer-name {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-desc {
+    margin: 8px 0;
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.linkedin-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 24px;
+    border-radius: 25px;
+    background-color: #0077b5;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.linkedin-btn:hover {
+    background-color: #005f91;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contact-btns .linkedin-btn {
+    margin-top: 0;
+}
+
+.contact-btns a:nth-child(1) {
+    background-color: #25d366;
+}
+
+.contact-btns a:nth-child(1):hover {
+    background-color: #1da851;
+}
+
+.contact-btns a:nth-child(2) {
+    background-color: #ea4335;
+}
+
+.contact-btns a:nth-child(2):hover {
+    background-color: #c5221f;
+}
