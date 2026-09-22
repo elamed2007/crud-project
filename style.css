@@ -38,7 +38,7 @@ button{
     width: 100%;
     background: #0069D9;
     border: none;
-    padding: 9px;
+    padding: 9px 7px;
     font-size: 18px;
     border-radius: 6px;
     transition: 0.3s;
