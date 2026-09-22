@@ -105,7 +105,7 @@ showdata()
 function productRow(i){
     return `
     <tr>
-        <th>${i}</th>
+        <th>${i+1}</th>
         <th>${escapeHtml(datapro[i].name)}</th>
         <th>${escapeHtml(datapro[i].price)}</th>
         <th>${escapeHtml(datapro[i].taxes)}</th>
