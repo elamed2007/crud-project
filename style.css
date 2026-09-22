@@ -92,6 +92,10 @@ small::before{
     content: 'Total:';
    
 }
+
+#createBtn{
+    width:100%
+}
 #searchBtns{
     display: flex;
     justify-content: space-between;
