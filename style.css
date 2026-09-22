@@ -94,8 +94,9 @@ small::before{
 }
 
 #createBtn{
-    width:100%
+    width:100vh;
 }
+
 #searchBtns{
     display: flex;
     justify-content: space-between;
